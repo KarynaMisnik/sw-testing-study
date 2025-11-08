@@ -23,3 +23,11 @@
 **End-to-end Testing** - makes sure that everything works as intended;
 **Performance testing** - if a system manages different levels of usage;
 **Security testing** - if there are any potential vulnerabilities.
+
+**Software systems**
+
+**Multiple interconnected components:** Many parts that depend on each other(payment system, inventory system).
+
+**Diverse technologies:** Uses different languages, tools, frameworks or platforms.
+
+**Complex integrations:** Parts must work together across systems or services(API, db, cloud platforms - third-party).
