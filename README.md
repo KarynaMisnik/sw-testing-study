@@ -17,3 +17,9 @@
 
 4. Ensuring Regulatory Requirements
    To ensure that software follows safety and security standards.
+
+**Integration testing** - how well different components work together;
+**System testing** - if a software includes all requirements;
+**End-to-end Testing** - makes sure that everything works as intended;
+**Performance testing** - if a system manages different levels of usage;
+**Security testing** - if there are any potential vulnerabilities.
