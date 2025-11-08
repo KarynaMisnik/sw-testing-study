@@ -31,3 +31,16 @@
 **Diverse technologies:** Uses different languages, tools, frameworks or platforms.
 
 **Complex integrations:** Parts must work together across systems or services(API, db, cloud platforms - third-party).
+
+**Test automation:** Using tools/scripts to run tests automatically instead of manually.
+
+✔️ Advantages:
+Faster testing;
+Fewer human errors;
+Repeatable and reliable;
+Saves time and cost;
+
+➖ Drawbacks of test automation:
+High initial setup cost
+Maintenance effort when tests break
+Not suitable for all tests (e.g., exploratory testing)
