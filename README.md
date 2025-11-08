@@ -32,6 +32,8 @@
 
 **Complex integrations:** Parts must work together across systems or services(API, db, cloud platforms - third-party).
 
+#### Testing Stretegies
+
 **Test automation:** Using tools/scripts to run tests automatically instead of manually.
 
 ✔️ Advantages:
@@ -44,3 +46,10 @@ Saves time and cost;
 High initial setup cost
 Maintenance effort when tests break
 Not suitable for all tests (e.g., exploratory testing)
+
+**Risk-based testing:**
+A testing approach that prioritizes testing based on the risk and impact of potential failures, focusing more on high-risk areas first.
+
+**Strategic resource allocation** - optimization of tool use, training programs for testers.
+
+**Continuous monitoring and feedback**
