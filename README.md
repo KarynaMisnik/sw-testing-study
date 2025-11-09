@@ -53,3 +53,37 @@ A testing approach that prioritizes testing based on the risk and impact of pote
 **Strategic resource allocation** - optimization of tool use, training programs for testers.
 
 **Continuous monitoring and feedback**
+
+#### Software Rewuirements in context of Testing
+
+**BDD** (Behavior-Driven Development) -
+A development approach where software behavior is defined in plain language (**Given-When-Then**) before coding.
+
+Why it’s needed:
+🔸Improves communication between developers,testers, and business;
+🔸Ensures software meets user expectations;
+🔸Reduces misunderstandings and defects;
+
+**User story:**
+A short, simple description of a feature from the user’s perspective.
+
+It must be:
+🔹Clear and simple;
+🔹User-focused;
+🔹Testable;
+🔹Small and achievable;
+🔹Has acceptance criteria;
+
+✔️ Why testers need it:
+✔️ Understand user needs and expectations;
+✔️ Create relevant test cases;
+✔️ Validate real user behavior;
+
+**RTM** (Requirement Traceability Matrix):
+A document that maps requirements to their corresponding test cases in software testing.
+
+Why it’s important:
+Ensures all requirements are tested
+Helps track test coverage
+Identifies missing or untested requirements
+Aids in impact analysis when requirements change
