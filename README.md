@@ -122,3 +122,11 @@ Saves time compared to sequential testing
 Helps ensure consistency across platforms
 
 New technologies such as the Internet of Things (IoT), AI, and cloud computing require testers to develop new approaches and strategies to ensure software reliability, scalability, and security.
+
+Testing AI requires the focus on:
+
+**Fairness:** Ensuring the AI does not produce biased or discriminatory results for different users or data groups.
+
+**Explainability:** Verifying that AI decisions can be understood, interpreted, and justified.
+
+**Robustness:** Checking that the AI behaves correctly under unexpected, noisy, or edge-case inputs.
