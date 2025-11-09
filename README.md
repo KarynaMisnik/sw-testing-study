@@ -94,3 +94,31 @@ Aids in impact analysis when requirements change
 🌱 **Short iterations:** Less time for thorough testing(**maintaining traceability** - if all changes reflect test cases);
 🌱 **Continuous integration:** Tests must be automated and fast;
 🌱 **Collaboration demands:** Testers must work closely with developers and stakeholders constantly;
+
+**CI/CD in DevOps**
+
+**Continuous Integration (CI):** Automatically building and testing code every time changes are made, to catch issues early.
+
+**Continuous Deployment (CD):** Automatically deploying tested code to production or staging, ensuring rapid delivery of updates.
+
+**Shift-left testing:**
+Testing earlier in the development cycle (instead of at the end) in CI/CD pipelines.
+
+Purpose:
+🍀 Catch defects sooner
+🍀 Reduce cost and effort of fixing bugs
+🍀 Improve software quality and delivery speed
+
+**Manual testing**(preferred for exploratory and usability scenarios) are not for DevOps workflow. **Test automation** is more usable(tools like **Selenium**, **JUnit**, **Cypress**).
+
+**Fast feedback loop** is crucial for Agile and DevOps methodologies(real-time reporting, clear communication, test result analysis).
+
+**Parallel testing:**
+Running multiple tests at the same time on different environments, browsers, or data sets.
+
+Purpose:
+Speeds up testing
+Saves time compared to sequential testing
+Helps ensure consistency across platforms
+
+New technologies such as the Internet of Things (IoT), AI, and cloud computing require testers to develop new approaches and strategies to ensure software reliability, scalability, and security.
