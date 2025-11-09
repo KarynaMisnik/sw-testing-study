@@ -87,3 +87,10 @@ Ensures all requirements are tested
 Helps track test coverage
 Identifies missing or untested requirements
 Aids in impact analysis when requirements change
+
+**Agile** can be challenging for testers:
+
+🌱 **Frequent changes:** Requirements evolve rapidly, making tests quickly outdated(**test case rework**);
+🌱 **Short iterations:** Less time for thorough testing(**maintaining traceability** - if all changes reflect test cases);
+🌱 **Continuous integration:** Tests must be automated and fast;
+🌱 **Collaboration demands:** Testers must work closely with developers and stakeholders constantly;
