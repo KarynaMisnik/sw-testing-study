@@ -130,3 +130,7 @@ Testing AI requires the focus on:
 **Explainability:** Verifying that AI decisions can be understood, interpreted, and justified.
 
 **Robustness:** Checking that the AI behaves correctly under unexpected, noisy, or edge-case inputs.
+
+IoT in the context of testing requires(network, hardware, swintegrations):
+
+device interoperability, network stability, data integrity, real-time responsiveness, and attention to security vulnerabilities.
