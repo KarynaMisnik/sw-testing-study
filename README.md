@@ -134,3 +134,17 @@ Testing AI requires the focus on:
 IoT in the context of testing requires(network, hardware, swintegrations):
 
 device interoperability, network stability, data integrity, real-time responsiveness, and attention to security vulnerabilities.
+
+Cloud Computing(must be scalable, secure, resilient):
+
+**Scalability testing:** Verifies that cloud applications can handle increasing users or workloads by scaling resources up or down.
+
+**Resilience testing:** Ensures the system continues to work or recovers quickly when cloud components fail.
+
+Testers should adopt tools for testing:
+
+<ins>AI</ins> - TensorFlow Model Analysis, Fairlearn;
+
+<ins>IoT</ins> - WS IoT Device Tester, IoTIFY;
+
+<ins>cloud testing </ins> - Apache JMeter, Locust, Chaos Monkey;
