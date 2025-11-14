@@ -148,3 +148,13 @@ Testers should adopt tools for testing:
 <ins>IoT</ins> - WS IoT Device Tester, IoTIFY;
 
 <ins>cloud testing </ins> - Apache JMeter, Locust, Chaos Monkey;
+
+#### Cybersecurity and Software Testing
+
+In software testing, the following are required:
+
+**Security testing:** Ensures the system protects data and prevents unauthorized access.
+
+**Penetration testing:** Simulates real attacks to find exploitable weaknesses.
+
+**Vulnerability scanning:** Automatically detects known security flaws in the system.
