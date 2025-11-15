@@ -102,7 +102,8 @@ Aids in impact analysis when requirements change
 **Continuous Deployment (CD):** Automatically deploying tested code to production or staging, ensuring rapid delivery of updates.
 
 **Shift-left testing:**
-Testing earlier in the development cycle (instead of at the end) in CI/CD pipelines.
+Testing earlier( during the design and development
+phases) in the development cycle (instead of at the end) in CI/CD pipelines ➡️ reduces cost, effort, improves sw quality.
 
 Purpose:
 🍀 Catch defects sooner
@@ -149,6 +150,14 @@ Testers should adopt tools for testing:
 
 <ins>cloud testing </ins> - Apache JMeter, Locust, Chaos Monkey;
 
+Test Data Management Solutions:
+
+**Data masking:** Hides sensitive data while keeping it usable for testing.
+
+**Synthetic data generation:** Creates artificial test data that mimics real data.
+
+**Data virtualization:** Provides access to test data without copying or moving it.
+
 #### Cybersecurity and Software Testing
 
 In software testing, the following are required:
@@ -158,3 +167,7 @@ In software testing, the following are required:
 **Penetration testing:** Simulates real attacks to find exploitable weaknesses.
 
 **Vulnerability scanning:** Automatically detects known security flaws in the system.
+
+The biggest challenge for testers to balance security and usability.
+
+Security testing tools: OWASP ZAP, Burp Suite, Nessus.
