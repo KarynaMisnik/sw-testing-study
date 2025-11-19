@@ -59,25 +59,25 @@ A testing approach that prioritizes testing based on the risk and impact of pote
 **BDD** (Behavior-Driven Development) -
 A development approach where software behavior is defined in plain language (**Given-When-Then**) before coding.
 
-Why it’s needed:
-🔸Improves communication between developers,testers, and business;
-🔸Ensures software meets user expectations;
+Why it’s needed:<br>
+🔸Improves communication between developers,testers, and business;<br>
+🔸Ensures software meets user expectations;<br>
 🔸Reduces misunderstandings and defects;
 
 **User story:**
 A short, simple description of a feature from the user’s perspective.
 
-It must be:
-🔹Clear and simple;
-🔹User-focused;
-🔹Testable;
-🔹Small and achievable;
-🔹Has acceptance criteria;
+It must be:<br>
+🔹Clear and simple;<br>
+🔹User-focused;<br>
+🔹Testable;<br>
+🔹Small and achievable;<br>
+🔹Has acceptance criteria;<br>
 
-✔️ Why testers need it:
-✔️ Understand user needs and expectations;
-✔️ Create relevant test cases;
-✔️ Validate real user behavior;
+Why testers need it:<br>
+✔️ Understand user needs and expectations;<br>
+✔️ Create relevant test cases;<br>
+✔️ Validate real user behavior;<br>
 
 **RTM** (Requirement Traceability Matrix):
 A document that maps requirements to their corresponding test cases in software testing.
@@ -90,9 +90,9 @@ Aids in impact analysis when requirements change
 
 **Agile** can be challenging for testers:
 
-🌱 **Frequent changes:** Requirements evolve rapidly, making tests quickly outdated(**test case rework**);
-🌱 **Short iterations:** Less time for thorough testing(**maintaining traceability** - if all changes reflect test cases);
-🌱 **Continuous integration:** Tests must be automated and fast;
+🌱 **Frequent changes:** Requirements evolve rapidly, making tests quickly outdated(**test case rework**);<br>
+🌱 **Short iterations:** Less time for thorough testing(**maintaining traceability** - if all changes reflect test cases);<br>
+🌱 **Continuous integration:** Tests must be automated and fast;<br>
 🌱 **Collaboration demands:** Testers must work closely with developers and stakeholders constantly;
 
 **CI/CD in DevOps**
@@ -105,7 +105,7 @@ Aids in impact analysis when requirements change
 Testing earlier( during the design and development
 phases) in the development cycle (instead of at the end) in CI/CD pipelines ➡️ reduces cost, effort, improves sw quality.
 
-Purpose:
+Purpose:<br>
 🍀Catch defects sooner;<br>
 🍀Reduce cost and effort of fixing bugs;<br>
 🍀Improve software quality and delivery speed;<br>
