@@ -106,9 +106,9 @@ Testing earlier( during the design and development
 phases) in the development cycle (instead of at the end) in CI/CD pipelines ➡️ reduces cost, effort, improves sw quality.
 
 Purpose:
-🍀 Catch defects sooner
-🍀 Reduce cost and effort of fixing bugs
-🍀 Improve software quality and delivery speed
+🍀Catch defects sooner;<br>
+🍀Reduce cost and effort of fixing bugs;<br>
+🍀Improve software quality and delivery speed;<br>
 
 **Manual testing**(preferred for exploratory and usability scenarios) are not for DevOps workflow. **Test automation** is more usable(tools like **Selenium**, **JUnit**, **Cypress**).
 
