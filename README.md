@@ -1,10 +1,11 @@
 ## Software Testing Study Notes
 
-### Important terms
+**Content:**
 
-**SDLC** - software development lifecycle.
+- [Importance of SW Testing](#importance-of-sw-testing)
+- [Test Process](#test-process)
 
-#### Importance of SW Testing
+## Importance of SW Testing
 
 1. Ensuring Quality and Reliability
    Throughly tested software ➡️ saves time and money.
@@ -185,3 +186,26 @@ Security testing tools: OWASP ZAP, Burp Suite, Nessus.
 **🔘 Big Data and Analytics in Testing:** Analyzes large test and system data to improve quality and decisions.
 
 **🔘 Test Data Management Solutions:** Manages, prepares, and secures test data for reliable testing.
+
+## Test Process
+
+**SDLC** - software development lifecycle(Software
+Test Process).
+
+<ins>The Software Test Life Cycle (STLC)</ins> is a sequence of specific testing phases, they are carried out systematically to ensure that software is tested <b>efficiently</b> and <b>effectively</b>.
+
+The testing process - from planning to closure.
+
+#### Testing Phases
+
+       Planning
+          ↓
+       Analysis
+          ↓
+        Design
+          ↓
+    Implementation
+          ↓
+      Execution
+          ↓
+      Completeion
