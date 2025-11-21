@@ -5,6 +5,7 @@
 - [Importance of SW Testing](#importance-of-sw-testing)
 - [Test Process](#test-process)
 - [Black Box Testing](#black-box-testing)
+  - [Dynamic Testing](#dynamic-testing)
 
 ## Importance of SW Testing
 
@@ -304,3 +305,20 @@ Output: Test closure report.
 
 > NOTE: Positive → Negative → Forced errors → Exhaustive coverage is a
 > logical “defect-hunting ladder.”
+
+### Dynamic Testing
+
+**Dynamic testing** is a type of software testing where the actual code is executed to verify that the software behaves as expected.
+
+<ins>Key Points about Dynamic Testing:</ins>
+🔸Execution-based: You actually run the program.
+🔸Validates behavior: Checks whether the software produces correct results.
+🔸Detects defects: Finds errors, crashes, incorrect outputs, performance issues, etc.
+🔸Can be functional or non-functional:
+🔸Functional: Verify features like ATM withdrawal, login, borrowing books
+🔸Non-functional: Test performance, load, stress, security
+
+💡 Remember:
+
+Static Testing: Code is not executed (reviews, walkthroughs, inspections)
+Dynamic Testing: Code is executed with inputs to check results
