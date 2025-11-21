@@ -4,6 +4,7 @@
 
 - [Importance of SW Testing](#importance-of-sw-testing)
 - [Test Process](#test-process)
+- [Black Box Testing](#black-box-testing)
 
 ## Importance of SW Testing
 
@@ -209,3 +210,97 @@ The testing process - from planning to closure.
       Execution
           ↓
       Completeion
+
+1️⃣ **Planning**
+
+<ins>Purpose:</ins> Decide what, how, and when testing will be done.
+
+Activities:
+
+> Define scope, objectives, testing types.
+
+Identify resources, tools, effort, and schedule.
+
+Output: Test plan document.
+
+Analysis
+
+Purpose: Understand requirements and what needs to be tested.
+
+Activities:
+
+Analyze functional and non-functional requirements.
+
+Identify testable requirements.
+
+Prepare requirement traceability matrix (RTM).
+
+Output: List of testable requirements, RTM.
+
+Design
+
+Purpose: Create detailed test cases and data.
+
+Activities:
+
+Write test cases and test scripts.
+
+Prepare test data.
+
+Review and get approvals.
+
+Output: Test cases, test scripts, test data.
+
+Implementation
+
+Purpose: Prepare the testing environment and get ready for execution.
+
+Activities:
+
+Set up test environment (hardware, software, network).
+
+Configure tools, servers, databases.
+
+Ensure everything is ready for test execution.
+
+Output: Ready-to-run test environment, test scripts finalized.
+
+Execution
+
+Purpose: Run the tests and report results.
+
+Activities:
+
+Execute test cases.
+
+Log defects and track their status.
+
+Retest after fixes.
+
+Output: Test execution reports, defect logs.
+
+Closure
+
+Purpose: Conclude testing and evaluate quality.
+
+Activities:
+
+Assess test coverage and effectiveness.
+
+Document lessons learned and best practices.
+
+Output: Test closure report.
+
+## Black Box Testing
+
+**Test case execution strategy**
+
+| **Testing Approach**                         | **Purpose / Focus**                                                                                          | **Example (ATM Withdrawal)**                                                                                                |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| **1. Test-to-pass (Positive Testing)**       | Verify normal functionality, “happy path”                                                                    | Enter correct PIN, withdraw $100 → ATM dispenses money, balance updated                                                     |
+| **2. Test-to-fail (Negative / Destructive)** | Provide invalid inputs to ensure system handles them gracefully                                              | Enter wrong PIN, withdraw more than balance, withdraw zero or negative amount → ATM blocks card or shows error              |
+| **3. Error-forcing**                         | Force system into error conditions to reveal hidden defects; deliberately break rules                        | Remove network connection during withdrawal, tamper with card, simulate cash shortage → ATM handles errors without crashing |
+| **4. Exhaustive Testing**                    | Test all possible valid & invalid scenarios (impractical for big systems, usually applied to critical areas) | Test **all PIN combinations, all withdrawal amounts, all card types, all error states** → ensures nothing is missed         |
+
+> NOTE: Positive → Negative → Forced errors → Exhaustive coverage is a
+> logical “defect-hunting ladder.”
