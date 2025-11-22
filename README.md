@@ -407,3 +407,9 @@ Instead of only checking inputs and outputs, white box testing checks how the co
 🔹Loops run correctly (0 times, 1 time, many times)
 🔹Internal error handling works
 🔹Code paths don’t contain unreachable or dead code
+
+<ins>When White Box Testing Is Used</ins>
+🔺Unit testing
+🔺Integration testing
+🔺Security testing (finding hidden vulnerabilities)
+🔺Code optimization and refactoring
