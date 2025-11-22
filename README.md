@@ -6,6 +6,7 @@
 - [Test Process](#test-process)
 - [Black Box Testing](#black-box-testing)
   - [Dynamic Testing](#dynamic-testing)
+    - [Black box Testing](#black-box-testing)
 
 ## Importance of SW Testing
 
@@ -322,3 +323,67 @@ Output: Test closure report.
 
 Static Testing: Code is not executed (reviews, walkthroughs, inspections)
 Dynamic Testing: Code is executed with inputs to check results
+
+#### Black Box Testing
+
+**Black Box Testing** is a software testing technique where the tester does not look at the internal code or logic of the application. The focus is entirely on inputs and outputs.
+
+<ins>Key Points about Black Box Testing</ins>
+
+1. No knowledge of internal code
+   Testers interact with the software as an end user would.
+2. Focus on functionality
+   Ensures the system meets requirements and specifications.
+3. Test based on requirements
+   Often derived from specifications, user stories, or use cases.
+4. Detects
+   Missing functionality
+   Incorrect outputs
+   User interface issues
+   Performance or security issues (if functional)
+
+**Types:**
+
+1. Equivalence Partitioning (EP)
+
+<ins>Idea:</ins> Divide input data into groups (partitions) where all values are expected to be treated the same by the system.
+
+<ins>Purpose:</ins> Reduce the number of test cases while still covering scenarios.
+
+**Example (ATM Withdrawal):**
+Partition 1: Valid PINs → 4-digit numbers 0000–9999
+Partition 2: Invalid PINs → non-numeric, 3-digit numbers, blank input
+You test one value from each partition instead of every possible input.
+
+2. Boundary Value Analysis (BVA)
+
+<ins>Idea:</ins> Errors often occur at the edges of input ranges, so test minimum, maximum, just below, and just above values.
+
+<ins>Purpose:</ins> Catch off-by-one and range-related errors.
+
+**Example (ATM Withdrawal):**
+Min withdrawal = $10, Max withdrawal = $2000
+Test cases: $9 (just below), $10 (min), $2000 (max), $2001 (just above)
+
+3. Combinatorial Testing
+
+<ins>Idea:</ins> Test all possible combinations of multiple inputs or factors.
+
+<ins>Purpose:</ins> Ensure system behaves correctly when multiple conditions interact.
+
+**Example (ATM Withdrawal):**
+Inputs: PIN (correct/incorrect), Withdrawal amount (valid/invalid), Account type (savings/current)
+Combinations: Test all possible scenarios like correct PIN + valid amount + savings account, incorrect PIN + invalid amount + current account, etc.
+
+4. Decision Table Testing
+
+<ins>Idea:</ins> Represent different combinations of inputs (conditions) and corresponding actions in a table to systematically create test cases.
+
+<ins>Purpose:</ins> Handle complex business logic with multiple rules.
+
+**Example (ATM Withdrawal):**
+| Condition 1 | Condition 2 | Action |
+| ------------- | -------------------- | --------------------------- |
+| Correct PIN | Sufficient balance | Dispense cash |
+| Correct PIN | Insufficient balance | Show error |
+| Incorrect PIN | Any balance | Block card after 3 attempts |
