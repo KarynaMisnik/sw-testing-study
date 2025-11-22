@@ -413,3 +413,26 @@ Instead of only checking inputs and outputs, white box testing checks how the co
 🔺Integration testing
 🔺Security testing (finding hidden vulnerabilities)
 🔺Code optimization and refactoring
+
+1. Statement Coverage
+
+**What it means:**
+Ensures every executable statement (line of code) is run at least once.
+
+**Goal:**
+Check that no line of code is completely untested.
+
+**Example:**
+
+```bash
+IF PIN is valid
+   show "Welcome"
+show "Insert amount"
+```
+
+Test with valid PIN → both statements execute
+Statement coverage = 100%
+
+⚠️ Limitation:
+
+Doesn’t guarantee all decisions (true/false) are tested.
