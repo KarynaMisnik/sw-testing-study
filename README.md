@@ -7,6 +7,7 @@
 - [Black Box Testing](#black-box-testing)
   - [Dynamic Testing](#dynamic-testing)
     - [Black box Testing](#black-box-testing)
+- [White Box Testing](#white-box-testing)
 
 ## Importance of SW Testing
 
@@ -387,3 +388,22 @@ Combinations: Test all possible scenarios like correct PIN + valid amount + savi
 | Correct PIN | Sufficient balance | Dispense cash |
 | Correct PIN | Insufficient balance | Show error |
 | Incorrect PIN | Any balance | Block card after 3 attempts |
+
+### White Box Testing
+
+**White Box Testing** (also called structural or glass box testing) is a testing technique where the tester has knowledge of the internal code, logic, and structure of the software and designs tests based on that.
+
+Instead of only checking inputs and outputs, white box testing checks how the code works internally.
+
+<ins>Key Characteristics</ins>
+🔹Tester knows the source code
+🔹Focuses on logic, control flow, and data flow
+🔹Usually performed by developers or testers with coding knowledge
+🔹Ensures the code is correct, complete, and efficient
+
+<ins>What White Box Testing Verifies</ins>
+🔹All statements are executed at least once
+🔹All branches/decisions are tested (if–else, loops)
+🔹Loops run correctly (0 times, 1 time, many times)
+🔹Internal error handling works
+🔹Code paths don’t contain unreachable or dead code
