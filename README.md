@@ -460,3 +460,48 @@ balance ≥ amount → TRUE branch
 balance < amount → FALSE branch
 
 ✅ Both branches tested → full branch coverage.
+
+3. **Path Coverage**
+
+**What it means:**
+Ensures all possible execution paths in the program are tested.
+
+**Goal:**
+Catch defects caused by specific sequences of decisions.
+
+**Example:**
+
+```bash
+IF PIN valid
+   IF balance sufficient
+      dispense cash
+   ELSE
+      show error
+ELSE
+   block card
+```
+
+Possible paths:
+Valid PIN → sufficient balance
+Valid PIN → insufficient balance
+Invalid PIN
+
+All paths must be tested for 100% path coverage.
+
+⚠️ Note:
+Can be very expensive or impossible for complex programs.
+
+4. **Multiple Condition Coverage**
+
+**What it means:**
+Ensures all combinations of conditions inside a decision are tested.
+
+**Goal:**
+Validate complex boolean logic.
+
+**Example:**
+
+```bash
+IF (PIN valid AND account active)
+   allow withdrawal
+```
