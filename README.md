@@ -215,81 +215,60 @@ The testing process - from planning to closure.
       Completeion
 
 1️⃣ **Planning**
-
-<ins>Purpose:</ins> Decide what, how, and when testing will be done.
+Purpose: Decide what, how, and when testing will be done.
 
 Activities:
-
-> Define scope, objectives, testing types.
-
+Define scope, objectives, testing types.
 Identify resources, tools, effort, and schedule.
 
 Output: Test plan document.
 
-Analysis
-
+**Analysis**
 Purpose: Understand requirements and what needs to be tested.
 
 Activities:
-
 Analyze functional and non-functional requirements.
-
 Identify testable requirements.
-
 Prepare requirement traceability matrix (RTM).
 
 Output: List of testable requirements, RTM.
 
-Design
-
+2️⃣ **Design**
 Purpose: Create detailed test cases and data.
 
 Activities:
-
 Write test cases and test scripts.
-
 Prepare test data.
-
 Review and get approvals.
 
 Output: Test cases, test scripts, test data.
 
-Implementation
-
+3️⃣ **Implementation**
 Purpose: Prepare the testing environment and get ready for execution.
 
 Activities:
-
 Set up test environment (hardware, software, network).
-
 Configure tools, servers, databases.
-
 Ensure everything is ready for test execution.
 
 Output: Ready-to-run test environment, test scripts finalized.
 
-Execution
-
+4️⃣ **Execution**
 Purpose: Run the tests and report results.
 
 Activities:
-
 Execute test cases.
-
 Log defects and track their status.
 
 Retest after fixes.
 
 Output: Test execution reports, defect logs.
 
-Closure
-
+5️⃣ **Closure**
 Purpose: Conclude testing and evaluate quality.
 
 Activities:
-
 Assess test coverage and effectiveness.
-
 Document lessons learned and best practices.
 
 Output: Test closure report.
