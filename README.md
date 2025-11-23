@@ -505,3 +505,24 @@ Validate complex boolean logic.
 IF (PIN valid AND account active)
    allow withdrawal
 ```
+
+Conditions:
+PIN valid (T/F)
+Account active (T/F)
+
+Test combinations:
+T, T → allow withdrawal
+T, F → reject
+F, T → reject
+F, F → reject
+
+✅ All combinations tested → full multiple condition coverage.
+
+**Summary:**
+
+| Coverage Type               | Focus                      | Strength                       |
+| --------------------------- | -------------------------- | ------------------------------ |
+| Statement Coverage          | Lines of code              | Finds unexecuted code          |
+| Branch Coverage             | True/False decisions       | Validates logic flow           |
+| Path Coverage               | All execution paths        | Catches complex logic errors   |
+| Multiple Condition Coverage | All condition combinations | Best for complex boolean rules |
