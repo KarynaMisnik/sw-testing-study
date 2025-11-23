@@ -414,7 +414,7 @@ Instead of only checking inputs and outputs, white box testing checks how the co
 🔺Security testing (finding hidden vulnerabilities)
 🔺Code optimization and refactoring
 
-1. Statement Coverage
+1. **Statement Coverage**
 
 **What it means:**
 Ensures every executable statement (line of code) is run at least once.
@@ -436,3 +436,27 @@ Statement coverage = 100%
 ⚠️ Limitation:
 
 Doesn’t guarantee all decisions (true/false) are tested.
+
+2. **Branch (Decision) Coverage**
+
+**What it means:**
+Ensures every decision outcome (true and false) is executed at least once.
+
+**Goal:**
+Verify logic correctness of if, else, switch, loops.
+
+**Example:**
+
+```bash
+IF balance >= amount
+   dispense cash
+ELSE
+   show error
+```
+
+Test cases:
+
+balance ≥ amount → TRUE branch
+balance < amount → FALSE branch
+
+✅ Both branches tested → full branch coverage.
