@@ -618,6 +618,27 @@ ATM dispensed incorrect amount → rerun the same withdrawal test to confirm fix
 | Test cases | Different / selected | Same test cases |
 | Automation | Common               | Rare            |
 
+#### Non-Functional Testing (Specific Tests)
+
+**Non-Functional Testing (Specific Tests)** evaluates how well the system works, not what it does. It focuses on quality attributes of the software.
+
+Key Points:<br>
+🔑 Performed mainly during system testing;<br>
+🔑 Uses mostly black box techniques;<br>
+🔑 Ensures the system is usable, secure, fast, and reliable;<br>
+
+**Common Types of Non-Functional Testing**<br>
+📌 Performance Testing – response time, throughput;<br>
+📌 Load Testing – behavior under expected user load;<br>
+📌 Stress Testing – behavior beyond limits;<br>
+📌 Scalability Testing – ability to handle growth;<br>
+📌 Security Testing – protection against threats;<br>
+📌 Usability Testing – ease of use;<br>
+📌 Reliability Testing – stability over time;<br>
+📌 Compatibility Testing – works across browsers/devices/OS;<br>
+📌 Recovery Testing – system recovery after failure;<br>
+📌 Portability Testing – ease of moving to other environments;<br>
+
 ## Black Box Testing
 
 **Test case execution strategy**
