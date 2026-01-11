@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+</head>
+<body>
+    <div class="triangle-wrapper">
+        <input type="number" id="sideA" placeholder="Side A">
+        <input type="number" id="sideB" placeholder="Side B">
+        <input type="number" id="sideC" placeholder="Side C">
+        <button onclick="checkTriangle()">Check Triangle</button>
+        <p id="result"></p>
+    </div>
+
+    <style></style>
+    <script>
+        function checkTriangle(){
+            const sideA = parseInt(document.getElementById('sideA').value);
+            const sideB = parseInt(document.getElementById('sideB').value);
+            const sideC = parseInt(document.getElementById('sideC').value);
+if(!Number.isInteger(sideA) || sideA <= 0 || !Number.isInteger(sideB) 
+|| sideB <= 0 || !Number.isInteger(sideC) || sideC <= 0){
+        document.getElementById('result').innerText = "Input should be whole number";
+return;
+
+}else if(sideA === sideB && sideB === sideC){
+document.getElementById('result').innerText = "Equilateral Triangle";
+return;
+}else if(sideA === sideB || sideB === sideC || sideA === sideC){
+document.getElementById('result').innerText = "Isosceles Triangle";
+return;
+
+}else if(sideA !== sideB && sideB !== sideC && sideA !== sideC){
+document.getElementById('result').innerText = "Scalene Triangle";
+return;
+}else{
+document.getElementById('result').innerText = "Not a Triangle";
+return;
+}
+        }
+    </script>
+</body>
+</html>
