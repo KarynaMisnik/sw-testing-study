@@ -4,6 +4,7 @@
 
 - [Importance of SW Testing](#importance-of-sw-testing)
 - [Test Process](#test-process)
+- [Designing Test Cases](#designing-test-cases)
 - [Black Box Testing](#black-box-testing)
   - [Dynamic Testing](#dynamic-testing)
     - [Black box Testing](#black-box-testing)
@@ -272,6 +273,67 @@ Assess test coverage and effectiveness.
 Document lessons learned and best practices.
 
 Output: Test closure report.
+
+## Designing Test Cases
+
+1. Understand the Program
+   Before designing test cases, clearly understand:
+   What the program does
+   Its inputs
+   Its outputs
+
+Consider different categories of input:
+Valid inputs — expected to work
+Invalid inputs — should be rejected or handled safely
+Boundary / edge values — limits that may cause errors
+
+Focus on expected behavior, not on the source code implementation.
+
+2. What Makes a Good Test Case
+   Ask yourself: Why did I choose this test case?
+
+A good test case:
+Helps reveal a fault
+Is unique (not redundant)
+Is meaningful (neither too trivial nor unnecessarily complex)
+
+A poor test case:
+Tests the same behavior as another test
+Uses inputs with unclear expected results
+Uses random values without a clear purpose
+
+3. Identify Test Inputs
+   Ask: What does this test case check?
+
+Each test case should include:
+Input values
+Expected results
+A clear reason for the test
+
+4. Order of Test Cases
+   4.1 Test-to-Pass (Verify Normal Behavior)
+   Valid inputs
+   Typical use cases
+   Expected to succeed
+
+4.2 Test-to-Fail (Try to Break the System)
+Invalid inputs
+Boundary conditions
+Error-forcing scenarios
+
+Exhaustive testing is impossible — quality matters more than quantity.
+
+5. Document Test Cases
+   Each documented test case should include:
+   Inputs
+   Expected results
+   A short explanation of what it verifies
+
+6. Review Test Coverage
+   Ask: Are all main behaviors covered?
+
+If two test cases check the same behavior, keep the stronger one
+Remove redundant or low-value tests
 
 ## Black Box Testing
 
