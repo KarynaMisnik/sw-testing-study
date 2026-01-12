@@ -341,17 +341,68 @@ Remove redundant or low-value tests
 
 **Initial Program Logic**
 
-<a href=''>First program example</a>
-
-The first version of the program only checked input validity:
-All inputs are whole numbers
-No floating-point values
-All sides are greater than zero
+<a href='https://karynamisnik.github.io/sw-testing-study/'>The first version</a> of the program only checked input validity:
+🔸All inputs are whole numbers
+🔸No floating-point values
+🔸All sides are greater than zero
 
 If these conditions passed, the program proceeded to classify the triangle as:
-Equilateral
-Isosceles
-Scalene
+🔹Equilateral
+🔹Isosceles
+🔹Scalene
+
+**🚩Limitation of the Initial Program**
+
+Although the input validation worked correctly, the program did not check the triangle inequality rule.
+
+<ins>As a result:</ins>
+The program could classify inputs as a triangle even when a triangle cannot exist
+Invalid triangles were sometimes labeled as valid types
+
+This means the program was **correct** for input validation, but **incorrect** for triangle validity.
+
+A triangle **must satisfy** <ins>the triangle inequality:</ins>
+
+🎓 A + B > C
+🎓 A + C > B
+🎓 B + C > A
+
+Without this check, the program classifies shapes that are **geometrically impossible.**
+
+**Test Cases Where the Program Works Correctly**
+
+These inputs are valid triangles, so the output is correct even without the triangle inequality check.
+
+| Input   | Output               | Reason                              |
+| ------- | -------------------- | ----------------------------------- |
+| 6, 6, 6 | Equilateral Triangle | All sides equal, valid triangle     |
+| 5, 5, 8 | Isosceles Triangle   | Two sides equal, inequality holds   |
+| 3, 4, 5 | Scalene Triangle     | All sides different, valid triangle |
+| 4, 5, 6 | Scalene Triangle     | Valid triangle                      |
+
+In these cases, the missing inequality check does not cause an error because the inputs already form valid triangles.
+
+**Test Cases That Expose the Bug**
+
+These inputs pass the whole-number and non-zero check, but do not form a valid triangle.
+
+| Input    | Program Output     | Correct Result | Issue                  |
+| -------- | ------------------ | -------------- | ---------------------- |
+| 5, 10, 5 | Isosceles Triangle | Not a Triangle | A + C = B              |
+| 1, 2, 10 | Scalene Triangle   | Not a Triangle | A + B < C              |
+| 1, 1, 2  | Isosceles Triangle | Not a Triangle | Boundary case          |
+| 1, 6, 4  | Scalene Triangle   | Not a Triangle | Small + medium < large |
+
+These cases show that:
+🔎 Input validation alone is not sufficient
+🔎 Triangle inequality must be checked before classification
+
+**Testing Conclusion**
+
+📌 The initial program correctly validates input type and range
+📌 It incorrectly assumes that valid input automatically means a valid triangle
+📌 Missing triangle inequality logic causes false positives
+📌 Boundary and invalid-geometry test cases are essential to reveal this defect
 
 ## Black Box Testing
 
