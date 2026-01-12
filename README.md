@@ -404,6 +404,26 @@ These cases show that:
 📌 Missing triangle inequality logic causes false positives
 📌 Boundary and invalid-geometry test cases are essential to reveal this defect
 
+**Fixed Program Logic**
+
+<a href='https://karynamisnik.github.io/sw-testing-study/triangle.html'>The program</a> was updated to separate input validation, triangle validity, and triangle classification into clear sequential steps.
+
+1️⃣ Input validation
+The program first checks that all inputs are **whole numbers** greater than zero.
+If this check fails, processing stops and an error message is shown.
+
+2️⃣ Triangle validity check
+After valid input is confirmed, the program verifies the triangle inequality rule.
+If the inequality fails, the input is correctly classified as **Not a Triangle**.
+
+3️⃣ Triangle classification
+Only inputs that pass both previous checks are classified as:
+🔺 Equilateral
+🔺 Isosceles
+🔺 Scalene
+
+This fix prevents invalid triangles from being incorrectly labeled as valid and ensures each stage of logic has a single, clear responsibility.
+
 ## Black Box Testing
 
 **Test case execution strategy**
