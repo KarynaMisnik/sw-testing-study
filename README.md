@@ -672,4 +672,5 @@ F, F → reject
 
 ## Reference List
 
-1. Son, H.(2024, December 12).<i>Exit Criteria: Advanced Strategies for Agile QA Teams.</i>TestRAil. <a href='[text](https://www.testrail.com/blog/exit-criteria-strategies/)'>https://www.testrail.com/blog/exit-criteria-strategies/</a>
+<a id="ref-1"></a>
+[1] Son, H. (2024, December 12).<i> Exit Criteria: Advanced Strategies for Agile QA Teams.</i> TestRail. https://www.testrail.com/blog/exit-criteria-strategies/
