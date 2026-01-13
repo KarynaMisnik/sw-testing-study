@@ -235,7 +235,7 @@ Activities:
 🔸Define the risks;
 🔸Determine the Exit Criteria;
 
-> Exit criteria in software testing are predefined conditions that must be met before a testing phase or the entire testing process can be considered complete and the software moved to the next stage, such as release or production.[1]:https://www.testrail.com/blog/exit-criteria-strategies/
+> Exit criteria in software testing are predefined conditions that must be met before a testing phase or the entire testing process can be considered complete and the software moved to the next stage, such as release or production [1].
 
 Output: Test plan document.
 
