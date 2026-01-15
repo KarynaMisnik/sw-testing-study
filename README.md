@@ -228,14 +228,22 @@ Completeion
 Purpose: Decide what, how, and when testing will be done.
 
 Activities:
-🔸Determine scope, testing types;
-🔸Identify objectives;
-🔸Identify resources, tools, effort;
-🔸Schedule test implementation, execution;
-🔸Define the risks;
-🔸Determine the Exit Criteria;
+🔸Determine scope, testing types;<br>
+🔸Identify objectives;<br>
+🔸Identify resources, tools, effort;<br>
+🔸Schedule test implementation, execution;<br>
+🔸Define the risks;<br>
+🔸Determine the Exit Criteria;<br>
 
-> Exit criteria in software testing are predefined conditions that must be met before a testing phase or the entire testing process can be considered complete and the software moved to the next stage, such as release or production [1].
+**Exit criteria** in software testing are predefined conditions that must be met before a testing phase or the entire testing process can be considered complete and the software moved to the next stage, such as release or production (Son, 2024) [1].
+
+‼️ Defining objectives is important since they help to design test cases. To define objectives you should list software features that will be tested and define target/goal of the test.
+
+Features that might be tested are:<br>
+🔲 Functionality;<br>
+🔲 Performance(speed, handling large amount of data);<br>
+🔲 User Interface(GUI);<br>
+🔲 Security;<br>
 
 Output: Test plan document.
 
