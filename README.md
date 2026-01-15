@@ -235,7 +235,7 @@ Activities:
 🔸Define the risks;<br>
 🔸Determine the Exit Criteria;<br>
 
-**Exit criteria** in software testing are predefined conditions that must be met before a testing phase or the entire testing process can be considered complete and the software moved to the next stage, such as release or production (Son, 2024) [1].
+**Exit criteria** in software testing are predefined conditions that must be met before a testing phase or the entire testing process can be considered complete and the software moved to the next stage, such as release or production (Son, 2024) [1](#ref-1)<a id="top"></a>.
 
 ‼️ Defining objectives is important since they help to design test cases. To define objectives you should list software features that will be tested and define target/goal of the test.
 
@@ -679,6 +679,8 @@ F, F → reject
 | Multiple Condition Coverage | All condition combinations | Best for complex boolean rules |
 
 ## Reference List
+
+[↩ Back](#top)
 
 <a id="ref-1"></a>
 [1] Son, H. (2024, December 12).<i> Exit Criteria: Advanced Strategies for Agile QA Teams.</i> TestRail. https://www.testrail.com/blog/exit-criteria-strategies/
