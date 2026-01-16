@@ -219,7 +219,7 @@ Completeion<br>
 1️⃣ **Planning**
 Purpose: Decide what, how, and when testing will be done.
 
-Activities:
+Activities:<br>
 🔸Determine scope, testing types;<br>
 🔸Identify objectives;<br>
 🔸Identify resources, tools, effort;<br>
@@ -240,9 +240,9 @@ Features that might be tested are:<br>
 Output: Test plan document.
 
 **Analysis**
-Purpose: Understand requirements and what needs to be tested.**What to test**
+Purpose: Understand requirements and what needs to be tested. **What to test**
 
-Activities:
+Activities:<br>
 🔲 Analyze functional and non-functional requirements;<br>
 🔲 Identify testable requirements;<br>
 🔲 Prepare requirement traceability matrix (RTM);<br>
@@ -254,16 +254,16 @@ Activities:
 Output: List of testable requirements, RTM.
 
 2️⃣ **Design**
-Purpose: Create detailed test cases and data.**How to test**
+Purpose: Create detailed test cases and data. **How to test**
 
-Activities:
+Activities:<br>
 🔲 Write test cases and test scripts;<br>
 🔲 Prepare test data;<br>
 🔲 Review and get approvals;<br>
 
 Output: Test cases, test scripts, test data.
 
-**Test design activities:**
+**Test design activities:**<br>
 🔸designing test;<br>
 🔸identifying test data, which support test conditions;<br>
 🔸designing test environment, selecting tools;<br>
@@ -275,9 +275,9 @@ Output: Test cases, test scripts, test data.
 3. tests cases combine **functional** and **non-functional**(UI, performance) test cases;<br>
 
 3️⃣ **Implementation**
-Purpose: Prepare the testing environment and get ready for execution.**Is there everything needed for testing**
+Purpose: Prepare the testing environment and get ready for execution. **Is there everything needed for testing**
 
-Activities:
+Activities:<br>
 🔲 Set up test environment (hardware, software, network);<br>
 🔲 Configure tools, servers, databases;<br>
 🔲 Ensure everything is ready for test execution;<br>
@@ -289,7 +289,7 @@ Activities:
 
 **A test suite** - a collection of related test cases grouped together to validate a specific feature, functionality, or aspect of a software application.
 
-**Criteria to group test suites:**
+**Criteria to group test suites:**<br>
 🔹priority;<br>
 🔹test's type;<br>
 🔹execution time;<br>
@@ -300,7 +300,7 @@ Output: Ready-to-run test environment, test scripts finalized.
 4️⃣ **Execution**
 Purpose: Run the tests and report results.
 
-Activities:
+Activities:<br>
 🔲 Execute test cases;<br>
 🔲 Log defects and track their status;<br>
 
@@ -311,7 +311,7 @@ Output: Test execution reports, defect logs.
 5️⃣ **Closure**
 Purpose: Conclude testing and evaluate quality.
 
-Activities:
+Activities:<br>
 🔲 Assess test coverage and effectiveness;<br>
 🔲 Document lessons learned and best practices;<br>
 
@@ -319,61 +319,65 @@ Output: Test closure report.
 
 ## Designing Test Cases
 
-1. Understand the Program
-   Before designing test cases, clearly understand:
-   What the program does
-   Its inputs
-   Its outputs
+1. Understand the Program<br>
+   Before designing test cases, clearly understand:<br>
+   🔶 What the program does<br>
+   🔶 Its inputs<br>
+   🔶 Its outputs<br>
 
-Consider different categories of input:
-Valid inputs — expected to work
-Invalid inputs — should be rejected or handled safely
-Boundary / edge values — limits that may cause errors
+Consider different categories of input:<br>
+🔷 Valid inputs — expected to work<br>
+🔷 Invalid inputs — should be rejected or handled safely<br>
+🔷 Boundary / edge values — limits that may cause errors<br>
 
 Focus on expected behavior, not on the source code implementation.
 
 2. What Makes a Good Test Case
-   Ask yourself: Why did I choose this test case?
 
-A good test case:
-Helps reveal a fault
-Is unique (not redundant)
-Is meaningful (neither too trivial nor unnecessarily complex)
+Ask yourself: Why did I choose this test case?
 
-A poor test case:
-Tests the same behavior as another test
-Uses inputs with unclear expected results
-Uses random values without a clear purpose
+A good test case:<br>
+✅ Helps reveal a fault<br>
+✅ Is unique (not redundant)<br>
+✅ Is meaningful (neither too trivial nor unnecessarily complex)<br>
+
+A poor test case:<br>
+❌ Tests the same behavior as another test<br>
+❌ Uses inputs with unclear expected results<br>
+❌ Uses random values without a clear purpose<br>
 
 3. Identify Test Inputs
-   Ask: What does this test case check?
 
-Each test case should include:
-Input values
-Expected results
-A clear reason for the test
+Ask: What does this test case check?
+
+Each test case should include:<br>
+✔️ Input values<br>
+✔️ Expected results<br>
+✔️ A clear reason for the test<br>
 
 4. Order of Test Cases
-   4.1 Test-to-Pass (Verify Normal Behavior)
-   Valid inputs
-   Typical use cases
-   Expected to succeed
 
-4.2 Test-to-Fail (Try to Break the System)
-Invalid inputs
-Boundary conditions
-Error-forcing scenarios
+4.1 Test-to-Pass (Verify Normal Behavior)<br>
+Valid inputs<br>
+Typical use cases<br>
+Expected to succeed<br>
+
+4.2 Test-to-Fail (Try to Break the System)<br>
+Invalid inputs<br>
+Boundary conditions<br>
+Error-forcing scenarios<br>
 
 Exhaustive testing is impossible — quality matters more than quantity.
 
-5. Document Test Cases
-   Each documented test case should include:
-   Inputs
-   Expected results
-   A short explanation of what it verifies
+5. Document Test Cases<br>
+   Each documented test case should include:<br>
+   Inputs<br>
+   Expected results<br>
+   A short explanation of what it verifies<br>
 
 6. Review Test Coverage
-   Ask: Are all main behaviors covered?
+
+Ask: Are all main behaviors covered?
 
 If two test cases check the same behavior, keep the stronger one
 Remove redundant or low-value tests
@@ -382,15 +386,15 @@ Remove redundant or low-value tests
 
 **Initial Program Logic**
 
-<a href='https://karynamisnik.github.io/sw-testing-study/'>The first version</a> of the program only checked input validity:
-🔸All inputs are whole numbers
-🔸No floating-point values
-🔸All sides are greater than zero
+<a href='https://karynamisnik.github.io/sw-testing-study/'>The first version</a> of the program only checked input validity:<br>
+🔸All inputs are whole numbers<br>
+🔸No floating-point values<br>
+🔸All sides are greater than zero<br>
 
-If these conditions passed, the program proceeded to classify the triangle as:
-🔹Equilateral
-🔹Isosceles
-🔹Scalene
+If these conditions passed, the program proceeded to classify the triangle as:<br>
+🔹Equilateral<br>
+🔹Isosceles<br>
+🔹Scalene<br>
 
 **🚩Limitation of the Initial Program**
 
@@ -404,9 +408,9 @@ This means the program was **correct** for input validation, but **incorrect** f
 
 A triangle **must satisfy** <ins>the triangle inequality:</ins>
 
-🎓 A + B > C
-🎓 A + C > B
-🎓 B + C > A
+🎓 A + B > C<br>
+🎓 A + C > B<br>
+🎓 B + C > A<br>
 
 Without this check, the program classifies shapes that are **geometrically impossible.**
 
@@ -458,10 +462,10 @@ After valid input is confirmed, the program verifies the triangle inequality rul
 If the inequality fails, the input is correctly classified as **Not a Triangle**.
 
 3️⃣ Triangle classification
-Only inputs that pass both previous checks are classified as:
-🔺 Equilateral
-🔺 Isosceles
-🔺 Scalene
+Only inputs that pass both previous checks are classified as:<br>
+🔺 Equilateral<br>
+🔺 Isosceles<br>
+🔺 Scalene<br>
 
 This fix prevents invalid triangles from being incorrectly labeled as valid and ensures each stage of logic has a single, clear responsibility.
 
