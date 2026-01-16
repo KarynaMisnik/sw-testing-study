@@ -154,11 +154,8 @@ Cloud Computing(must be scalable, secure, resilient):
 **Resilience testing:** Ensures the system continues to work or recovers quickly when cloud components fail.
 
 Testers should adopt tools for testing:
-
 <ins>AI</ins> - TensorFlow Model Analysis, Fairlearn;
-
 <ins>IoT</ins> - WS IoT Device Tester, IoTIFY;
-
 <ins>cloud testing </ins> - Apache JMeter, Locust, Chaos Monkey;
 
 Test Data Management Solutions:
@@ -185,26 +182,21 @@ Security testing tools: OWASP ZAP, Burp Suite, Nessus.
 
 #### Trends in Software Testing(2026)
 
-**🔘 AI-Powered Test Automation:** Uses AI/ML to create, execute, and maintain tests more efficiently.
-
-**🔘 Shift-Left Testing:** Starts testing early in the development lifecycle to find defects sooner.
-
-**🔘 DevOps and Continuous Testing:** Integrates testing continuously into CI/CD pipelines.
-
-**🔘 Cloud-Based Testing Environment:** Uses cloud infrastructure to test at scale and on demand.
-
-**🔘 Big Data and Analytics in Testing:** Analyzes large test and system data to improve quality and decisions.
-
-**🔘 Test Data Management Solutions:** Manages, prepares, and secures test data for reliable testing.
+**🔘 AI-Powered Test Automation:** Uses AI/ML to create, execute, and maintain tests more efficiently.<br>
+**🔘 Shift-Left Testing:** Starts testing early in the development lifecycle to find defects sooner.<br>
+**🔘 DevOps and Continuous Testing:** Integrates testing continuously into CI/CD pipelines.<br>
+**🔘 Cloud-Based Testing Environment:** Uses cloud infrastructure to test at scale and on demand.<br>
+**🔘 Big Data and Analytics in Testing:** Analyzes large test and system data to improve quality and decisions.<br>
+**🔘 Test Data Management Solutions:** Manages, prepares, and secures test data for reliable testing.<br>
 
 ## Test Process
 
 **SDLC** - software development lifecycle(Software
 Test Process).
 
-**SRS** - the Software Requirement Specification document.
+**SRS** - the Software Requirement Specification document.<a id='term-1'></a>
 
-**SDD** - Specification-Driven Development(software development approach, where specifications are written before a code)
+**SDD** - Specification-Driven Development(software development approach, where specifications are written before a code).<a id='term-2'></a>
 
 <ins>The Software Test Life Cycle (STLC)</ins> is a sequence of specific testing phases, they are carried out systematically to ensure that software is tested <b>efficiently</b> and <b>effectively</b>.
 
@@ -212,17 +204,17 @@ The testing process - from planning to closure.
 
 #### Testing Phases
 
-Planning and Control
+Planning and Control<br>
 ↓
-Analysis
+Analysis<br>
 ↓
-Design
+Design<br>
 ↓
-Implementation
+Implementation<br>
 ↓
-Execution
+Execution<br>
 ↓
-Completeion
+Completeion<br>
 
 1️⃣ **Planning**
 Purpose: Decide what, how, and when testing will be done.
@@ -248,32 +240,60 @@ Features that might be tested are:<br>
 Output: Test plan document.
 
 **Analysis**
-Purpose: Understand requirements and what needs to be tested.
+Purpose: Understand requirements and what needs to be tested.**What to test**
 
 Activities:
-Analyze functional and non-functional requirements.
-Identify testable requirements.
-Prepare requirement traceability matrix (RTM).
+🔲 Analyze functional and non-functional requirements;<br>
+🔲 Identify testable requirements;<br>
+🔲 Prepare requirement traceability matrix (RTM);<br>
+
+**Test basis documents** are analysed during this phase; to identify testable features.
+
+> Test basis include: SRS [a](#term-1), SDD [b](#term-2), code.
 
 Output: List of testable requirements, RTM.
 
 2️⃣ **Design**
-Purpose: Create detailed test cases and data.
+Purpose: Create detailed test cases and data.**How to test**
 
 Activities:
-Write test cases and test scripts.
-Prepare test data.
-Review and get approvals.
+🔲 Write test cases and test scripts;<br>
+🔲 Prepare test data;<br>
+🔲 Review and get approvals;<br>
 
 Output: Test cases, test scripts, test data.
 
+**Test design activities:**
+🔸designing test;<br>
+🔸identifying test data, which support test conditions;<br>
+🔸designing test environment, selecting tools;<br>
+
+**Test Case Design Login Form Example:**
+
+1. test case for each form object;<br>
+2. tests cases combine both **negative** and **positive** test cases;<br>
+3. tests cases combine **functional** and **non-functional**(UI, performance) test cases;<br>
+
 3️⃣ **Implementation**
-Purpose: Prepare the testing environment and get ready for execution.
+Purpose: Prepare the testing environment and get ready for execution.**Is there everything needed for testing**
 
 Activities:
-Set up test environment (hardware, software, network).
-Configure tools, servers, databases.
-Ensure everything is ready for test execution.
+🔲 Set up test environment (hardware, software, network);<br>
+🔲 Configure tools, servers, databases;<br>
+🔲 Ensure everything is ready for test execution;<br>
+🔲 Develop and prioritize test prosedures;<br>
+🔲 Create test suites;<br>
+🔲 Schedule the test suites to make tseting more efficient;<br>
+
+**Test Procedure** - is a detailed, step-by-step set of instructions that guides testers on how to execute specific test cases [2](#ref-2).<a id="implement"></a>
+
+**A test suite** - a collection of related test cases grouped together to validate a specific feature, functionality, or aspect of a software application.
+
+**Criteria to group test suites:**
+🔹priority;<br>
+🔹test's type;<br>
+🔹execution time;<br>
+🔹modules;<br>
 
 Output: Ready-to-run test environment, test scripts finalized.
 
@@ -281,8 +301,8 @@ Output: Ready-to-run test environment, test scripts finalized.
 Purpose: Run the tests and report results.
 
 Activities:
-Execute test cases.
-Log defects and track their status.
+🔲 Execute test cases;<br>
+🔲 Log defects and track their status;<br>
 
 Retest after fixes.
 
@@ -292,8 +312,8 @@ Output: Test execution reports, defect logs.
 Purpose: Conclude testing and evaluate quality.
 
 Activities:
-Assess test coverage and effectiveness.
-Document lessons learned and best practices.
+🔲 Assess test coverage and effectiveness;<br>
+🔲 Document lessons learned and best practices;<br>
 
 Output: Test closure report.
 
@@ -684,3 +704,7 @@ F, F → reject
 
 <a id="ref-1"></a>
 [1] Son, H. (2024, December 12).<i> Exit Criteria: Advanced Strategies for Agile QA Teams.</i> TestRail. https://www.testrail.com/blog/exit-criteria-strategies/
+
+[↩ Back](#implement)
+<a id="ref-2"></a>
+[2] Riaz, K. (2023, December 27). <i>What is difference with Process and Procedure in Software Testing.</i> LinkedIn. https://www.linkedin.com/pulse/what-difference-process-procedure-software-testing-kalim-riaz-ziyef
