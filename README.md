@@ -5,6 +5,7 @@
 - [Importance of SW Testing](#importance-of-sw-testing)
 - [Test Process](#test-process)
 - [Designing Test Cases](#designing-test-cases)
+  - [Triangle Types Example](#triangle-types-example)
 - [Black Box Testing](#black-box-testing)
   - [Dynamic Testing](#dynamic-testing)
     - [Black box Testing](#black-box-testing)
@@ -335,6 +336,22 @@ Exhaustive testing is impossible — quality matters more than quantity.
 
 If two test cases check the same behavior, keep the stronger one
 Remove redundant or low-value tests
+
+### Triangle Types Example
+
+**Initial Program Logic**
+
+<a href=''>First program example</a>
+
+The first version of the program only checked input validity:
+All inputs are whole numbers
+No floating-point values
+All sides are greater than zero
+
+If these conditions passed, the program proceeded to classify the triangle as:
+Equilateral
+Isosceles
+Scalene
 
 ## Black Box Testing
 
