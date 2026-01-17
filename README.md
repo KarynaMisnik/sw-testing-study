@@ -9,6 +9,7 @@
   - [Dynamic Testing](#dynamic-testing)
     - [Black box Testing](#black-box-testing)
 - [White Box Testing](#white-box-testing)
+- [Testing Tools](#testing-tools)
 
 ## Importance of SW Testing
 
