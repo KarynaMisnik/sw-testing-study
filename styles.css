@@ -43,3 +43,11 @@ button {
   font-size: 1.2rem;
   color: #fff;
 }
+
+.nav-fixed {
+  background-color: #28a745;
+}
+
+.nav-unfixed {
+  background-color: #dc3545;
+}
