@@ -9,7 +9,8 @@
 - [Designing Test Cases](#designing-test-cases)
   - [Triangle Types Example](#triangle-types-example)
 - [Test Levels](#test-levels)
-- [Unit Testing](#unit-testing)
+  - [Unit Testing](#unit-testing)
+  - [Integration Testing](#integration-testing)
 - [Black Box Testing](#black-box-testing)
   - [Dynamic Testing](#dynamic-testing)
     - [Black box Testing](#black-box-testing)
@@ -501,6 +502,55 @@ This fix prevents invalid triangles from being incorrectly labeled as valid and 
 🔒 Make debugging easier;<br>
 🔒 Improve code quality and maintainability;<br>
 🔒 Support safe refactoring;<br>
+
+#### Integration Testing
+
+**Purpose of Integration Testing:**<br>
+🔒 Detect interface defects;<br>
+🔒 Verify data is passed correctly between modules;<br>
+🔒 Catch issues missed in unit testing;<br>
+
+**Integration Testing Approaches**
+
+1. Bottom-Up Integration<br>
+   Start testing from low-level modules and move upward.<br>
+   Higher-level modules are replaced with drivers.<br>
+   No stubs needed.<br>
+
+➕ Pros:<br>
+Core logic tested early
+
+➖ Cons:<br>
+User-level functionality tested late
+
+2. Top-Down Integration<br>
+   Start testing from top-level modules and move downward.<br>
+   Lower-level modules are replaced with stubs.<br>
+
+➕ Pros:<br>
+Early validation of main workflows
+
+➖ Cons:<br>
+Low-level logic tested late
+
+3. Big-Bang Integration<br>
+   All modules are integrated at once and tested together.<br>
+   No stubs or drivers.<br>
+
+➕ Pros:<br>
+Simple setup
+
+➖ Cons:<br>
+Hard to isolate defects<br>
+High risk, not recommended for large systems<br>
+
+In integration testing, stubs and drivers are **temporary dummy** programs used to simulate missing parts of the system during testing.
+
+> **Stub:** A temporary module used to simulate lower-level components in
+> top-down integration testing.
+
+> **Driver:** A temporary module used to simulate higher-level components
+> in bottom-up integration testing.
 
 ## Black Box Testing
 
