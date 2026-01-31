@@ -13,6 +13,8 @@
   - [Integration Testing](#integration-testing)
   - [System Testing](#system-testing)
   - [Acceptance Testing](#acceptance-testing)
+  - [Regression Testing](#regression-testing)
+  - [Retesting](#retesting)
 - [Black Box Testing](#black-box-testing)
   - [Dynamic Testing](#dynamic-testing)
     - [Black box Testing](#black-box-testing)
@@ -589,6 +591,32 @@ Key Points<br>
    Performed by actual end users;<br>
    Uncontrolled, real-world conditions;<br>
    Collects feedback and uncovers environment-specific issues;<br>
+
+#### Regression Testing
+
+Ensures that existing functionality still works after changes (bug fixes, enhancements).<br>
+Focus: **unchanged** areas of the system.<br>
+Usually automated.<br>
+Done at any test level (unit, integration, system).<br>
+
+**Example:**<br>
+Fix ATM withdrawal bug → recheck login, balance inquiry, previous withdrawals.
+
+#### Retesting (Repeat Testing)
+
+Re-executes **the same test cases** to verify a specific defect is fixed.<br>
+Focus: changed/fixed functionality only.<br>
+Mostly manual.<br>
+
+**Example:**<br>
+ATM dispensed incorrect amount → rerun the same withdrawal test to confirm fix.
+
+| Aspect     | Regression Testing   | Retesting       |
+| ---------- | -------------------- | --------------- |
+| Purpose    | Ensure nothing broke | Verify bug fix  |
+| Scope      | Broad                | Narrow          |
+| Test cases | Different / selected | Same test cases |
+| Automation | Common               | Rare            |
 
 ## Black Box Testing
 
