@@ -11,6 +11,8 @@
 - [Test Levels](#test-levels)
   - [Unit Testing](#unit-testing)
   - [Integration Testing](#integration-testing)
+  - [System Testing](#system-testing)
+  - [Acceptance Testing](#acceptance-testing)
 - [Black Box Testing](#black-box-testing)
   - [Dynamic Testing](#dynamic-testing)
     - [Black box Testing](#black-box-testing)
@@ -536,6 +538,7 @@ Low-level logic tested late
 3. Big-Bang Integration<br>
    All modules are integrated at once and tested together.<br>
    No stubs or drivers.<br>
+   Only for small projects with clear structure;<br>
 
 ➕ Pros:<br>
 Simple setup
@@ -551,6 +554,41 @@ In integration testing, stubs and drivers are **temporary dummy** programs used 
 
 > **Driver:** A temporary module used to simulate higher-level components
 > in bottom-up integration testing.
+
+#### System Testing
+
+**System Testing** is a testing level where the complete, fully integrated system is tested(by testing team) as a whole to verify that it meets specified requirements.
+
+Key points:<br>
+🔑 Performed after integration testing;<br>
+🔑 Uses mainly black box testing;<br>
+🔑 Done in a test environment;<br>
+🔑 Tests both functional and non-functional requirements;<br>
+
+#### Acceptance Testing
+
+**Acceptance Testing** is the **final** level of testing where the system is evaluated to decide whether it is ready for release.
+It checks if the software meets business requirements and user expectations.
+
+Key Points<br>
+🔑 Performed after system testing;<br>
+🔑 Focuses on real-world usage;<br>
+🔑 Uses mainly black box testing;<br>
+🔑 Conducted by customers, users, or business stakeholders;<br>
+
+**Types of Acceptance Testing**
+
+1. Alpha Testing<br>
+   Done at the developer’s site;<br>
+   Performed by internal teams (QA, developers, selected users);<br>
+   Controlled environment;<br>
+   Finds major defects before external release;<br>
+
+2. Beta Testing<br>
+   Done at the customer’s site / real user environment;<br>
+   Performed by actual end users;<br>
+   Uncontrolled, real-world conditions;<br>
+   Collects feedback and uncovers environment-specific issues;<br>
 
 ## Black Box Testing
 
