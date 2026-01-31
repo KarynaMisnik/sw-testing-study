@@ -8,6 +8,8 @@
 - [Test Process](#test-process)
 - [Designing Test Cases](#designing-test-cases)
   - [Triangle Types Example](#triangle-types-example)
+- [Test Levels](#test-levels)
+- [Unit Testing](#unit-testing)
 - [Black Box Testing](#black-box-testing)
   - [Dynamic Testing](#dynamic-testing)
     - [Black box Testing](#black-box-testing)
@@ -468,6 +470,37 @@ Only inputs that pass both previous checks are classified as:<br>
 🔺 Scalene<br>
 
 This fix prevents invalid triangles from being incorrectly labeled as valid and ensures each stage of logic has a single, clear responsibility.
+
+## Test Levels
+
+🚀 Unit Testing(test individual component);<br>
+🚀 Integration Test(test intergrated component);<br>
+🚀 System Testing(test entire system);<br>
+🚀 Acceptance Testing(test the final system);<br>
+
+**Consiser for each test level:**<br>
+💡 Focus area: **What part is tested**;<br>
+💡 Fault Types: **What defects are being found**;<br>
+💡 Test Design Basis: **What inputs form the test design**;<br>
+💡 Test Responsibility: **What should a test perform**;<br>
+
+#### Unit Testing
+
+**Unit Testing** focuses on testing <i>individual</i> units or components of code (like a function, method, or class) in isolation to ensure they work correctly.
+
+**Key Characteristics of Unit Testing:**<br>
+🔑 Tests one small piece of code at a time;<br>
+🔑 Done early in the development cycle;<br>
+🔑 Usually performed by developers;<br>
+🔑 Uses white box testing techniques;<br>
+🔑 Fast to execute and easy to automate;<br>
+
+**Purpose of Unit Testing:**<br>
+🔒 Catch bugs early, before integration;<br>
+🔒 Ensure code logic is correct;<br>
+🔒 Make debugging easier;<br>
+🔒 Improve code quality and maintainability;<br>
+🔒 Support safe refactoring;<br>
 
 ## Black Box Testing
 
