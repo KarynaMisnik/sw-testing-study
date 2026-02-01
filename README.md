@@ -611,12 +611,13 @@ Mostly manual.<br>
 **Example:**<br>
 ATM dispensed incorrect amount → rerun the same withdrawal test to confirm fix.
 
-| Aspect     | Regression Testing   | Retesting       |
+**Compare:**<br>
+| Aspect | Regression Testing | Retesting |
 | ---------- | -------------------- | --------------- |
-| Purpose    | Ensure nothing broke | Verify bug fix  |
-| Scope      | Broad                | Narrow          |
+| Purpose | Ensure nothing broke | Verify bug fix |
+| Scope | Broad | Narrow |
 | Test cases | Different / selected | Same test cases |
-| Automation | Common               | Rare            |
+| Automation | Common | Rare |
 
 #### Non-Functional Testing (Specific Tests)
 
