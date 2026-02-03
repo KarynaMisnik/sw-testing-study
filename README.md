@@ -548,10 +548,10 @@ ELSE
    block card
 ```
 
-Possible paths:
-Valid PIN → sufficient balance
-Valid PIN → insufficient balance
-Invalid PIN
+Possible paths:<br>
+Valid PIN → sufficient balance<br>
+Valid PIN → insufficient balance<br>
+Invalid PIN<br>
 
 All paths must be tested for 100% path coverage.
 
@@ -573,15 +573,15 @@ IF (PIN valid AND account active)
    allow withdrawal
 ```
 
-Conditions:
-PIN valid (T/F)
-Account active (T/F)
+Conditions:<br>
+PIN valid (T/F)<br>
+Account active (T/F)<br>
 
-Test combinations:
-T, T → allow withdrawal
-T, F → reject
-F, T → reject
-F, F → reject
+Test combinations:<br>
+T, T → allow withdrawal<br>
+T, F → reject<br>
+F, T → reject<br>
+F, F → reject<br>
 
 ✅ All combinations tested → full multiple condition coverage.
 
