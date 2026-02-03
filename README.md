@@ -454,24 +454,32 @@ Combinations: Test all possible scenarios like correct PIN + valid amount + savi
 
 Instead of only checking inputs and outputs, white box testing checks how the code works internally.
 
-<ins>Key Characteristics</ins>
-🔹Tester knows the source code
-🔹Focuses on logic, control flow, and data flow
-🔹Usually performed by developers or testers with coding knowledge
-🔹Ensures the code is correct, complete, and efficient
+<ins>Key Characteristics</ins><br>
+🔹Tester knows the source code<br>
+🔹Focuses on logic, control flow, and data flow<br>
+🔹Usually performed by developers or testers with coding knowledge<br>
+🔹Ensures the code is correct, complete, and efficient<br>
 
-<ins>What White Box Testing Verifies</ins>
-🔹All statements are executed at least once
-🔹All branches/decisions are tested (if–else, loops)
-🔹Loops run correctly (0 times, 1 time, many times)
-🔹Internal error handling works
-🔹Code paths don’t contain unreachable or dead code
+<ins>What White Box Testing Verifies</ins><br>
+🔹All statements are executed at least once<br>
+🔹All branches/decisions are tested (if–else, loops)<br>
+🔹Loops run correctly (0 times, 1 time, many times)<br>
+🔹Internal error handling works<br>
+🔹Code paths don’t contain unreachable or dead code<br>
 
-<ins>When White Box Testing Is Used</ins>
-🔺Unit testing
-🔺Integration testing
-🔺Security testing (finding hidden vulnerabilities)
-🔺Code optimization and refactoring
+<ins>When White Box Testing Is Used</ins><br>
+🔺Unit testing<br>
+🔺Integration testing<br>
+🔺Security testing (finding hidden vulnerabilities)<br>
+🔺Code optimization and refactoring<br>
+
+**Code Coverage**
+
+(Number of coverage items exercised / Total number of coverage items) \* 100%
+
+It can be applied to any level;<br>
+It is only helpful for written code;<br>
+It is better to use automated tools for code coverage;<br>
 
 1. **Statement Coverage**
 
