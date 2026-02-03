@@ -598,9 +598,20 @@ F, F → reject
 
 A white-box testing technique that focuses on how variables are defined, used, and modified throughout the program to detect issues like unused variables or incorrect data usage.
 
+**Steps in Data Flow testing**
+
+1. Identify Variables;<br>
+2. Create a Data Flow Graph (how data is used within the program - identifying all dfinitions and uses); <br>
+3. Select Test Paths;<br>
+4. Design Test Cases;<br>
+5. Execute Tests;<br>
+6. Analyze Results;<br>
+
 **Control Flow Testing**
 
 A white-box testing technique that checks the execution paths, branches, and decisions in the code (e.g., if-statements, loops) to ensure all logical paths are tested.
+
+It improves code quality: helps to identify logical errors, infinite loops, unreachable code.
 
 **Positive Testing**
 
