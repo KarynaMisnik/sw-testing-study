@@ -593,3 +593,31 @@ F, F → reject
 | Branch Coverage             | True/False decisions       | Validates logic flow           |
 | Path Coverage               | All execution paths        | Catches complex logic errors   |
 | Multiple Condition Coverage | All condition combinations | Best for complex boolean rules |
+
+**Data flow testing**
+
+A white-box testing technique that focuses on how variables are defined, used, and modified throughout the program to detect issues like unused variables or incorrect data usage.
+
+**Control Flow Testing**
+
+A white-box testing technique that checks the execution paths, branches, and decisions in the code (e.g., if-statements, loops) to ensure all logical paths are tested.
+
+**Positive Testing**
+
+Testing with valid inputs to verify the system works as expected and produces correct results.
+
+**Negative Testing**
+
+Testing with invalid, unexpected, or incorrect inputs to ensure the system handles errors properly and does not crash.
+
+**Exploratory Testing**
+
+An informal testing approach where testers simultaneously learn, design, and execute tests without predefined test cases, using experience and intuition to find defects.
+
+| Testing Type             | Category         | Focus                           | Goal                                |
+| ------------------------ | ---------------- | ------------------------------- | ----------------------------------- |
+| **Data Flow Testing**    | White-box        | Variables (definition & usage)  | Detect incorrect data usage         |
+| **Control Flow Testing** | White-box        | Program paths (branches, loops) | Ensure all logical paths are tested |
+| **Positive Testing**     | Black-box        | Valid inputs                    | Verify system works correctly       |
+| **Negative Testing**     | Black-box        | Invalid inputs                  | Check error handling & robustness   |
+| **Exploratory Testing**  | Experience-based | Tester’s intuition              | Discover unexpected defects         |
